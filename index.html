@@ -1,0 +1,508 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff8f7">
+  <meta name="description" content="Sogdiana Salon & School — салон красоты и обучение парикмахерскому искусству в Токмоке.">
+  <title>SOGDIANA — Salon & School</title>
+
+  <!-- ✏️ ШРИФТЫ: можно заменить на другие Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<!-- ==========================================
+     ШАПКА САЙТА
+     ✏️ Здесь можно изменить название и меню
+========================================== -->
+<header class="header">
+  <a href="#home" class="logo">
+    SOGDIANA<span> SALON</span>
+    <small>& SCHOOL</small>
+  </a>
+
+  <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false">☰</button>
+
+  <nav class="nav">
+    <a href="#about">О нас</a>
+    <a href="#services">Услуги</a>
+    <a href="#gallery">Работы</a>
+    <a href="#school">Обучение</a>
+    <a href="#contacts">Контакты</a>
+  </nav>
+
+  <a href="#booking" class="nav-book">Записаться ↗</a>
+</header>
+
+<main>
+
+<!-- ==========================================
+     1. ГЛАВНЫЙ ЭКРАН
+     📸 ФОТО: images/hero.jpg
+     ✏️ Здесь можно изменить главный заголовок
+========================================== -->
+<section class="hero" id="home">
+  <div class="hero-content reveal">
+    <div class="eyebrow">
+      <span class="dot"></span>
+      BEAUTY SALON & ACADEMY · TOKMOK
+    </div>
+
+    <h1>Искусство<br>быть <em>собой.</em></h1>
+
+    <p class="hero-description">
+      Пространство красоты, вдохновения и новых возможностей.
+      Создаём прекрасные образы и обучаем будущих мастеров.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#booking" class="btn btn-primary">
+        Записаться в салон ↗
+      </a>
+      <a href="#school" class="btn btn-outline">
+        Пройти обучение ↗
+      </a>
+    </div>
+
+    <div class="hero-caption">
+      ✳ YOUR BEAUTY, OUR PASSION
+    </div>
+  </div>
+
+  <div class="hero-image">
+    <!-- 📸 ГЛАВНАЯ ФОТОГРАФИЯ САЛОНА -->
+    <img src="images/hero.jpg" alt="Sogdiana Salon">
+
+    <div class="hero-stamp">BEAUTY<br>IS AN ART<br>✳</div>
+    <div class="hero-image-label">SOGDIANA · SALON & SCHOOL</div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    BEAUTY IS AN ART ✳ LOVE YOURSELF ✳ SOGDIANA SALON ✳
+    BEAUTY IS AN ART ✳ LOVE YOURSELF ✳ SOGDIANA SALON ✳
+  </div>
+</div>
+
+<!-- ==========================================
+     2. О САЛОНЕ
+     📸 ФОТО: images/salon.jpg
+========================================== -->
+<section class="about section" id="about">
+  <div class="about-images reveal">
+    <!-- 📸 ФОТО ИНТЕРЬЕРА ИЛИ МАСТЕРОВ -->
+    <img src="images/salon.jpg" alt="Наш салон">
+    <div class="about-note">Made with love ♡</div>
+  </div>
+
+  <div class="about-text reveal">
+    <span class="eyebrow">01 / ДОБРО ПОЖАЛОВАТЬ</span>
+    <h2>Место, где<br>рождается <em>красота.</em></h2>
+
+    <!-- ✏️ ТЕКСТ О САЛОНЕ -->
+    <p>
+      Добро пожаловать в SOGDIANA SALON —
+      пространство красоты в городе Токмок.
+    </p>
+    <p>
+      Мы верим, что каждый человек прекрасен по-своему.
+      Наша задача — подчеркнуть твою индивидуальность
+      и подарить уверенность в себе.
+    </p>
+    <p>
+      А в SOGDIANA SCHOOL мы делимся знаниями
+      и помогаем сделать первые шаги в парикмахерском искусстве.
+    </p>
+
+    <a href="#services" class="underline-link">
+      Познакомиться с услугами ↗
+    </a>
+  </div>
+</section>
+
+<!-- ==========================================
+     3. УСЛУГИ САЛОНА
+     📸 hair.jpg  — стрижки
+     📸 color.jpg — окрашивание
+     📸 nails.jpg — маникюр
+     ✏️ Можно добавлять новые карточки
+========================================== -->
+<section class="services section" id="services">
+  <div class="section-top reveal">
+    <div>
+      <span class="eyebrow">02 / BEAUTY MENU</span>
+      <h2>Твоя красота —<br><em>наша забота.</em></h2>
+    </div>
+    <p>Выбирай процедуру и записывайся на удобное время.</p>
+  </div>
+
+  <div class="service-grid">
+
+    <!-- 📸 КАРТОЧКА 1: СТРИЖКИ -->
+    <article class="service-card reveal">
+      <div class="service-photo">
+        <img src="images/hair.jpg" alt="Стрижки и укладки" loading="lazy">
+      </div>
+      <div class="service-content">
+        <span>01 / HAIR</span>
+        <h3>Стрижки и укладки</h3>
+        <p>Обнови образ и подчеркни индивидуальность.</p>
+        <button class="service-book" data-service="Стрижка или укладка">
+          Записаться ↗
+        </button>
+      </div>
+    </article>
+
+    <!-- 📸 КАРТОЧКА 2: ОКРАШИВАНИЕ -->
+    <article class="service-card reveal">
+      <div class="service-photo">
+        <img src="images/color.jpg" alt="Окрашивание" loading="lazy">
+      </div>
+      <div class="service-content">
+        <span>02 / COLOR</span>
+        <h3>Окрашивание</h3>
+        <p>Красивые оттенки и новый взгляд на привычный образ.</p>
+        <button class="service-book" data-service="Окрашивание">
+          Записаться ↗
+        </button>
+      </div>
+    </article>
+
+    <!-- 📸 КАРТОЧКА 3: МАНИКЮР -->
+    <article class="service-card reveal">
+      <div class="service-photo">
+        <img src="images/nails.jpg" alt="Маникюр" loading="lazy">
+      </div>
+      <div class="service-content">
+        <span>03 / NAILS</span>
+        <h3>Маникюр</h3>
+        <p>Красота в каждой детали — до кончиков пальцев.</p>
+        <button class="service-book" data-service="Маникюр">
+          Записаться ↗
+        </button>
+      </div>
+    </article>
+
+  </div>
+
+  <p class="services-note">
+    Полный перечень услуг и актуальные цены уточняйте у администратора.
+  </p>
+</section>
+
+<section class="quote">
+  <span class="quote-star">✳</span>
+  <h2>
+    Ты заслуживаешь чувствовать себя
+    <em>прекрасной.</em> Каждый день.
+  </h2>
+  <span class="quote-star">✳</span>
+</section>
+
+<!-- ==========================================
+     4. ГАЛЕРЕЯ РАБОТ
+     📸 ЗАМЕНИ ФОТО:
+     images/work1.jpg
+     images/work2.jpg
+     images/work3.jpg
+     images/work4.jpg
+========================================== -->
+<section class="gallery section" id="gallery">
+  <div class="section-top reveal">
+    <div>
+      <span class="eyebrow">03 / OUR WORK</span>
+      <h2>Красота <em>в деталях.</em></h2>
+    </div>
+    <a href="https://www.instagram.com/sogsalon_tokmok/"
+       target="_blank" rel="noopener noreferrer" class="underline-link">
+      Все работы в Instagram ↗
+    </a>
+  </div>
+
+  <div class="gallery-grid">
+    <img src="images/work1.jpg" alt="Работа мастера 1" loading="lazy">
+    <img src="images/work2.jpg" alt="Работа мастера 2" loading="lazy">
+    <img src="images/work3.jpg" alt="Работа мастера 3" loading="lazy">
+    <img src="images/work4.jpg" alt="Работа мастера 4" loading="lazy">
+  </div>
+</section>
+
+<!-- ==========================================
+     5. SOGDIANA SCHOOL — ОБУЧЕНИЕ
+     🎬 ГЛАВНОЕ ВИДЕО: videos/school-main.mp4
+     📸 ОБЛОЖКА: images/school-main.jpg
+     Видео без звука, автоматически повторяется
+========================================== -->
+<section class="academy" id="school">
+
+  <div class="academy-intro reveal">
+    <span class="eyebrow">04 / SOGDIANA SCHOOL</span>
+    <div class="academy-decoration">✳</div>
+
+    <h2>Твоя будущая<br>профессия начинается <em>здесь.</em></h2>
+
+    <p>
+      Мечтаешь работать в индустрии красоты?
+      Изучай парикмахерское искусство с нуля
+      и развивай профессиональные навыки.
+    </p>
+
+    <a class="btn btn-primary" target="_blank" rel="noopener noreferrer"
+       href="https://wa.me/996550499633?text=Здравствуйте!%20Хочу%20узнать%20об%20обучении%20в%20Sogdiana%20School">
+      Хочу на обучение ↗
+    </a>
+  </div>
+
+  <!-- 🎬 БОЛЬШОЕ ВИДЕО С ПРОЦЕССОМ ОБУЧЕНИЯ -->
+  <div class="academy-feature-video">
+    <video autoplay muted loop playsinline preload="metadata"
+           poster="images/school-main.jpg">
+      <source src="videos/school-main.mp4" type="video/mp4">
+    </video>
+    <div class="academy-video-caption">
+      <span>LEARN · CREATE · INSPIRE</span>
+      <strong>Твоя история успеха начинается здесь.</strong>
+    </div>
+  </div>
+
+  <div class="academy-heading reveal">
+    <span class="eyebrow">ВЫБЕРИ СВОЁ НАПРАВЛЕНИЕ</span>
+    <h2>Чему можно <em>научиться?</em></h2>
+  </div>
+
+  <div class="course-grid">
+
+    <!-- ====================================
+         🎬 ВИДЕО 1: ЖЕНСКИЕ СТРИЖКИ
+         videos/women-cut.mp4
+         📸 Обложка: images/women-cut.jpg
+    ==================================== -->
+    <article class="course-card reveal">
+      <div class="course-media">
+        <video autoplay muted loop playsinline preload="metadata"
+               poster="images/women-cut.jpg">
+          <source src="video/1.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="course-body">
+        <span>01 / HAIRCUT</span>
+        <h3>Женские стрижки</h3>
+        <p>Формы, линии, длина, текстура волос и базовые техники стрижек.</p>
+        <button class="course-button" data-course="Женские стрижки">
+          Узнать подробнее ↗
+        </button>
+      </div>
+    </article>
+
+    <!-- ====================================
+         🎬 ВИДЕО 2: МУЖСКИЕ СТРИЖКИ
+         videos/men-cut.mp4
+         📸 Обложка: images/men-cut.jpg
+    ==================================== -->
+    <article class="course-card reveal">
+      <div class="course-media">
+        <video autoplay muted loop playsinline preload="metadata"
+               poster="images/men-cut.jpg">
+          <source src="video/2.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="course-body">
+        <span>02 / BARBER</span>
+        <h3>Мужские стрижки</h3>
+        <p>Работа с машинкой и ножницами, переходы и мужские образы.</p>
+        <button class="course-button" data-course="Мужские стрижки">
+          Узнать подробнее ↗
+        </button>
+      </div>
+    </article>
+
+    <!-- ====================================
+         🎬 ВИДЕО 3: КОЛОРИСТИКА
+         videos/colorist.mp4
+         📸 Обложка: images/colorist.jpg
+    ==================================== -->
+    <article class="course-card reveal">
+      <div class="course-media">
+        <video autoplay muted loop playsinline preload="metadata"
+               poster="images/colorist.jpg">
+          <source src="video/IMG_1041.MP4" type="video/mp4">
+        </video>
+      </div>
+      <div class="course-body">
+        <span>03 / COLOR</span>
+        <h3>Колористика</h3>
+        <p>Основы цвета, подбор оттенков, окрашивание и осветление.</p>
+        <button class="course-button" data-course="Колористика">
+          Узнать подробнее ↗
+        </button>
+      </div>
+    </article>
+
+    <!-- ====================================
+         🎬 ВИДЕО 4: УКЛАДКИ
+         videos/styling.mp4
+         📸 Обложка: images/styling.jpg
+    ==================================== -->
+    <article class="course-card reveal">
+      <div class="course-media">
+        <video autoplay muted loop playsinline preload="metadata"
+               poster="images/styling.jpg">
+          <source src="video/IMG_1040.MP4" type="video/mp4">
+        </video>
+      </div>
+      <div class="course-body">
+        <span>04 / STYLING</span>
+        <h3>Укладки и причёски</h3>
+        <p>Создание локонов, объёма, праздничных укладок и образов.</p>
+        <button class="course-button" data-course="Укладки и причёски">
+          Узнать подробнее ↗
+        </button>
+      </div>
+    </article>
+
+  </div>
+
+  <!-- ПРЕИМУЩЕСТВА ОБУЧЕНИЯ -->
+  <div class="academy-benefits">
+    <div class="benefits-text reveal">
+      <span class="eyebrow">ПОЧЕМУ SOGDIANA SCHOOL?</span>
+      <h2>От первых шагов<br>до <em>уверенного мастера.</em></h2>
+
+      <p>
+        Обучение с нуля, современная учебная база
+        и возможность повышения квалификации.
+      </p>
+
+      <div class="stats">
+        <div><strong>20%</strong><span>Теория</span></div>
+        <div><strong>80%</strong><span>Практика</span></div>
+      </div>
+
+      <p class="course-note">
+        Стоимость, сроки и подробную программу уточняйте у школы.
+      </p>
+
+      <a href="https://wa.me/996550499633?text=Здравствуйте!%20Хочу%20записаться%20на%20курсы%20парикмахера"
+         target="_blank" rel="noopener noreferrer" class="btn btn-cream">
+        Записаться на курсы ↗
+      </a>
+    </div>
+
+    <!-- 📸 ФОТО: images/school.jpg -->
+    <div class="benefits-image">
+      <img src="images/school.jpg" alt="Обучение в Sogdiana School" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================
+     6. ФОРМА ЗАПИСИ
+     ✏️ Услуги можно менять в select
+     📱 WhatsApp настроен в script.js
+========================================== -->
+<section class="booking section" id="booking">
+  <div class="booking-text reveal">
+    <span class="eyebrow">05 / BOOK YOUR BEAUTY TIME</span>
+    <h2>Время для<br><em>себя ♡</em></h2>
+    <p>
+      Выбери процедуру и удобное время.
+      Мы подготовим сообщение для администратора в WhatsApp.
+    </p>
+    <div class="booking-phone">WhatsApp: +996 550 499 633</div>
+  </div>
+
+  <form id="bookingForm" class="booking-form reveal">
+    <label for="clientName">Твоё имя</label>
+    <input id="clientName" type="text" placeholder="Как тебя зовут?" maxlength="80" required>
+
+    <label for="clientService">Выбери услугу</label>
+    <select id="clientService" required>
+      <option value="">Выбрать услугу</option>
+      <option>Женская стрижка</option>
+      <option>Мужская стрижка</option>
+      <option>Стрижка или укладка</option>
+      <option>Окрашивание</option>
+      <option>Маникюр</option>
+      <option>Другая услуга</option>
+    </select>
+
+    <label for="clientDate">Желаемая дата</label>
+    <input id="clientDate" type="date" required>
+
+    <label for="clientTime">Удобное время</label>
+    <input id="clientTime" type="time" min="09:00" max="19:00" required>
+
+    <button type="submit" class="btn btn-primary">
+      Продолжить в WhatsApp ↗
+    </button>
+
+    <small>
+      Отправка формы не бронирует время автоматически.
+    </small>
+  </form>
+</section>
+
+<!-- ==========================================
+     7. КОНТАКТЫ
+     ✏️ Укажи точный адрес салона
+========================================== -->
+<section class="contacts section" id="contacts">
+  <span class="eyebrow">06 / FIND US</span>
+  <h2>Ждём тебя <em>в гости!</em></h2>
+
+  <div class="contact-grid">
+    <div>
+      <span>ЛОКАЦИЯ</span>
+      <h3>Токмок, Кыргызстан</h3>
+      <!-- ✏️ СЮДА ВСТАВЬ ТОЧНЫЙ АДРЕС -->
+      <p>Точный адрес уточняйте</p>
+    </div>
+    <div>
+      <span>ГРАФИК</span>
+      <h3>09:00 — 19:00</h3>
+      <p>Рабочие дни уточняйте</p>
+    </div>
+    <div>
+      <span>WHATSAPP</span>
+      <h3><a href="https://wa.me/996550499633" target="_blank" rel="noopener noreferrer">
+        +996 550 499 633 ↗
+      </a></h3>
+    </div>
+  </div>
+
+  <div class="social-links">
+    <a href="https://www.instagram.com/sogsalon_tokmok/" target="_blank" rel="noopener noreferrer">
+      INSTAGRAM SALON ↗
+    </a>
+    <a href="https://www.instagram.com/meerimbosmoldoeva/" target="_blank" rel="noopener noreferrer">
+      INSTAGRAM SCHOOL ↗
+    </a>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="footer-title">SOGDIANA<span>♡</span></div>
+  <div class="footer-subtitle">SALON & SCHOOL · TOKMOK</div>
+  <div class="footer-bottom">
+    <span>© 2026 SOGDIANA SALON & SCHOOL</span>
+    <span>BEAUTY IS AN ART</span>
+  </div>
+</footer>
+
+<!-- 📱 ПЛАВАЮЩАЯ КНОПКА WHATSAPP -->
+<a class="floating-wa" href="https://wa.me/996550499633"
+   target="_blank" rel="noopener noreferrer" aria-label="Написать в WhatsApp">
+  WA ↗
+</a>
+
+</body>
+</html>
